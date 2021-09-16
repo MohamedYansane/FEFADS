@@ -16,8 +16,8 @@
         <property name="hbm2ddl.auto">update</property>
 
         <!-- Mapping Models java to DB entities -->
-        <mapping class="com.sample.testmysql.Model.Student"/>
-        <mapping class="com.sample.testmysql.Model.Classe"/>
+        <mapping class="com.big3_2020.fefads.Model.EmployeModel"/>
+        
 
 
 
