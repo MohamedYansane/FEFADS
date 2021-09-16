@@ -1,5 +1,6 @@
 package com.big3_2020.fefads;
 
+import com.big3_2020.fefads.Controller.HibernateConfiguration;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -9,6 +10,17 @@ import javafx.stage.Stage;
 
 
 public class MainApp extends Application {
+
+    @Override
+    public void init() throws Exception {
+       try {
+           HibernateConfiguration.initDatabase();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+ 
+  
 
     @Override
     public void start(Stage stage) throws Exception {
